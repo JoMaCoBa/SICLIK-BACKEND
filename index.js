@@ -4,6 +4,9 @@ const express = require('express');
 const cors = require('cors');
 const sequelize = require('./config/database');
 
+const Product = require('./models/Product.model');
+const Order = require('./models/Order.model');
+
 const routerApi = require('./routes');
 
 const app = express();
