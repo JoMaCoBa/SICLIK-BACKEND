@@ -1,11 +1,13 @@
 const express = require('express');
 
-const producstRouter = require('./products.router');
+const productsRouter = require('./products.router');
+const ordersRouter = require('./orders.router');
 
 function routerApi(app){
   const router = express.Router();
   app.use('/api', router);
-  router.use('/products', producstRouter);
+  router.use('/products', productsRouter);
+  router.use('/orders', ordersRouter);
 }
 
 module.exports = routerApi;
