@@ -9,6 +9,16 @@ exports.getAllProducts = async (req, res) => {
   }
 };
 
+exports.getProductsByCategory = async (req, res) => {
+  try {
+    const { category } = req.params;
+    const products = await Product.findAll({ where: { category } });
+    res.status(200).json(products);
+  } catch (error) {
+    res.status(500).json({ error: "Error to obtain products" });
+  }
+};
+
 exports.getProduct = async (req, res) => {
   try {
     const { id } = req.params;
