@@ -1,4 +1,4 @@
-# 🍽 Shopping Cart - Backend
+# 🍽 SICLIK - Backend
 
 Este proyecto es el backend de una tienda en línea, desarrollado con Node.js, Express y MySQL, utilizando Sequelize como ORM.
 
